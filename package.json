@@ -1,0 +1,22 @@
+{
+  "name": "mathew-banda-activity7-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mathew Banda's ICT251 Activity 7 IT Support Desk backend",
+  "author": "Mathew Banda",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:setup": "node scripts/setup-db.js",
+    "test": "node --test --test-concurrency=1 tests/*.test.js",
+    "test:live": "node scripts/test-live.js"
+  },
+  "engines": { "node": "24.x || 26.x" },
+  "dependencies": {
+    "@libsql/client": "0.18.0",
+    "cors": "2.8.6",
+    "dotenv": "18.0.10",
+    "express": "5.3.0"
+  }
+}
